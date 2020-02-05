@@ -1,0 +1,589 @@
+2020-02-05 01:46:13 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\atlantic\src\vendor/bower-asset/jquery/dist in C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php:455
+Stack trace:
+#0 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(287): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\atlantic\src\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('\n<div id="home"...')
+#12 C:\xampp\htdocs\atlantic\src\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\atlantic\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2020-02-05 01:46:13 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'adminer_permanent' => ''
+    '_identity' => 'ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2\",2592000]\";}'
+    'PHPSESSID' => '2v2ral4o13doet6kgbsj34rab8'
+    '_csrf' => 'ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'adminer_permanent=; _identity=ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2%22%2C2592000%5D%22%3B%7D; PHPSESSID=2v2ral4o13doet6kgbsj34rab8; _csrf=ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\PHP7;C:\\ProgramData\\ComposerSetup\\bin;C:\\cygwin64\\bin;C:\\Users\\unira\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\unira\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\unira\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\unira\\AppData\\Local\\JetBrains\\PhpStorm 2019.3.2\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/atlantic/web/index.php'
+    'REMOTE_PORT' => '56990'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/atlantic/web/'
+    'SCRIPT_NAME' => '/atlantic/web/index.php'
+    'PHP_SELF' => '/atlantic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1580863573.152
+    'REQUEST_TIME' => 1580863573
+]
+2020-02-05 01:46:13 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\atlantic\src\vendor/bower-asset/jquery/dist in C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php:455
+Stack trace:
+#0 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(287): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\atlantic\src\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('\n<div id="home"...')
+#12 C:\xampp\htdocs\atlantic\src\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\atlantic\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2020-02-05 01:46:13 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'adminer_permanent' => ''
+    '_identity' => 'ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2\",2592000]\";}'
+    'PHPSESSID' => '2v2ral4o13doet6kgbsj34rab8'
+    '_csrf' => 'ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_SEC_FETCH_SITE' => 'cross-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'adminer_permanent=; _identity=ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2%22%2C2592000%5D%22%3B%7D; PHPSESSID=2v2ral4o13doet6kgbsj34rab8; _csrf=ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\PHP7;C:\\ProgramData\\ComposerSetup\\bin;C:\\cygwin64\\bin;C:\\Users\\unira\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\unira\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\unira\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\unira\\AppData\\Local\\JetBrains\\PhpStorm 2019.3.2\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/atlantic/web/index.php'
+    'REMOTE_PORT' => '56991'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/atlantic/web/'
+    'SCRIPT_NAME' => '/atlantic/web/index.php'
+    'PHP_SELF' => '/atlantic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1580863573.276
+    'REQUEST_TIME' => 1580863573
+]
+2020-02-05 01:46:15 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\atlantic\src\vendor/bower-asset/jquery/dist in C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php:455
+Stack trace:
+#0 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(287): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\atlantic\src\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('\n<div id="home"...')
+#12 C:\xampp\htdocs\atlantic\src\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\atlantic\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2020-02-05 01:46:15 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'adminer_permanent' => ''
+    '_identity' => 'ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2\",2592000]\";}'
+    'PHPSESSID' => '2v2ral4o13doet6kgbsj34rab8'
+    '_csrf' => 'ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'adminer_permanent=; _identity=ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2%22%2C2592000%5D%22%3B%7D; PHPSESSID=2v2ral4o13doet6kgbsj34rab8; _csrf=ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\PHP7;C:\\ProgramData\\ComposerSetup\\bin;C:\\cygwin64\\bin;C:\\Users\\unira\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\unira\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\unira\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\unira\\AppData\\Local\\JetBrains\\PhpStorm 2019.3.2\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/atlantic/web/index.php'
+    'REMOTE_PORT' => '56992'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/atlantic/web/'
+    'SCRIPT_NAME' => '/atlantic/web/index.php'
+    'PHP_SELF' => '/atlantic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1580863575.725
+    'REQUEST_TIME' => 1580863575
+]
+2020-02-05 01:46:15 [::1][-][-][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\atlantic\src\vendor/bower-asset/jquery/dist in C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php:455
+Stack trace:
+#0 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(287): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\atlantic\src\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('\n<div id="home"...')
+#12 C:\xampp\htdocs\atlantic\src\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\atlantic\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2020-02-05 01:46:15 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'adminer_permanent' => ''
+    '_identity' => 'ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2\",2592000]\";}'
+    'PHPSESSID' => '2v2ral4o13doet6kgbsj34rab8'
+    '_csrf' => 'ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_SEC_FETCH_SITE' => 'cross-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'adminer_permanent=; _identity=ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2%22%2C2592000%5D%22%3B%7D; PHPSESSID=2v2ral4o13doet6kgbsj34rab8; _csrf=ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\PHP7;C:\\ProgramData\\ComposerSetup\\bin;C:\\cygwin64\\bin;C:\\Users\\unira\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\unira\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\unira\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\unira\\AppData\\Local\\JetBrains\\PhpStorm 2019.3.2\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/atlantic/web/index.php'
+    'REMOTE_PORT' => '56993'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/atlantic/web/'
+    'SCRIPT_NAME' => '/atlantic/web/index.php'
+    'PHP_SELF' => '/atlantic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1580863575.797
+    'REQUEST_TIME' => 1580863575
+]
+2020-02-05 01:46:28 [::1][1][2v2ral4o13doet6kgbsj34rab8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\atlantic\src\vendor/bower-asset/jquery/dist in C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php:455
+Stack trace:
+#0 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(287): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\atlantic\src\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('\n<div id="home"...')
+#12 C:\xampp\htdocs\atlantic\src\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\atlantic\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2020-02-05 01:46:28 [::1][1][2v2ral4o13doet6kgbsj34rab8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'adminer_permanent' => ''
+    '_identity' => 'ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2\",2592000]\";}'
+    'PHPSESSID' => '2v2ral4o13doet6kgbsj34rab8'
+    '_csrf' => 'ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'adminer_permanent=; _identity=ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2%22%2C2592000%5D%22%3B%7D; PHPSESSID=2v2ral4o13doet6kgbsj34rab8; _csrf=ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\PHP7;C:\\ProgramData\\ComposerSetup\\bin;C:\\cygwin64\\bin;C:\\Users\\unira\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\unira\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\unira\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\unira\\AppData\\Local\\JetBrains\\PhpStorm 2019.3.2\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/atlantic/web/index.php'
+    'REMOTE_PORT' => '56994'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/atlantic/web/'
+    'SCRIPT_NAME' => '/atlantic/web/index.php'
+    'PHP_SELF' => '/atlantic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1580863588.489
+    'REQUEST_TIME' => 1580863588
+]
+2020-02-05 01:46:28 [::1][1][2v2ral4o13doet6kgbsj34rab8][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: C:\xampp\htdocs\atlantic\src\vendor/bower-asset/jquery/dist in C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php:455
+Stack trace:
+#0 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(287): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\View.php(292): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 C:\xampp\htdocs\atlantic\src\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(348): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(401): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(387): yii\base\Controller->renderContent('\n<div id="home"...')
+#12 C:\xampp\htdocs\atlantic\src\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\atlantic\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\atlantic\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2020-02-05 01:46:28 [::1][1][2v2ral4o13doet6kgbsj34rab8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'adminer_permanent' => ''
+    '_identity' => 'ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2\",2592000]\";}'
+    'PHPSESSID' => '2v2ral4o13doet6kgbsj34rab8'
+    '_csrf' => 'ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_SEC_FETCH_SITE' => 'cross-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'adminer_permanent=; _identity=ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2%22%2C2592000%5D%22%3B%7D; PHPSESSID=2v2ral4o13doet6kgbsj34rab8; _csrf=ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\PHP7;C:\\ProgramData\\ComposerSetup\\bin;C:\\cygwin64\\bin;C:\\Users\\unira\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\unira\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\unira\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\unira\\AppData\\Local\\JetBrains\\PhpStorm 2019.3.2\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/atlantic/web/index.php'
+    'REMOTE_PORT' => '56998'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/atlantic/web/'
+    'SCRIPT_NAME' => '/atlantic/web/index.php'
+    'PHP_SELF' => '/atlantic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1580863588.738
+    'REQUEST_TIME' => 1580863588
+]
+2020-02-05 01:55:04 [::1][1][2v2ral4o13doet6kgbsj34rab8][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "assets/images/header-hero.jpg". in C:\xampp\htdocs\atlantic\src\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\atlantic\src\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('assets/images/h...', Array)
+#1 C:\xampp\htdocs\atlantic\src\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\atlantic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\atlantic\src\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\atlantic\src\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\atlantic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2020-02-05 01:55:04 [::1][1][2v2ral4o13doet6kgbsj34rab8][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'adminer_permanent' => ''
+    '_identity' => 'ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2\",2592000]\";}'
+    'PHPSESSID' => '2v2ral4o13doet6kgbsj34rab8'
+    '_csrf' => 'ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_REFERER' => 'http://localhost/atlantic/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'adminer_permanent=; _identity=ecc239705e618342a01848664598f629edb70a2c7af8b75e7d2feaa551dd9a8ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22M-_nMk8g90bDPnpSMJurkVd9-M-ULfx2%22%2C2592000%5D%22%3B%7D; PHPSESSID=2v2ral4o13doet6kgbsj34rab8; _csrf=ebad0e1992e8da1ebdf4aaa66922d43e56fd6ad541e5d8c58b30b4fed944d711a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22i6dA3AJypkvTyj6r_RkIRxWLcaXWBdFx%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\PHP7;C:\\ProgramData\\ComposerSetup\\bin;C:\\cygwin64\\bin;C:\\Users\\unira\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\unira\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\unira\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\unira\\AppData\\Local\\JetBrains\\PhpStorm 2019.3.2\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.4.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/atlantic/web/index.php'
+    'REMOTE_PORT' => '57116'
+    'REDIRECT_URL' => '/atlantic/web/assets/images/header-hero.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/atlantic/web/assets/images/header-hero.jpg'
+    'SCRIPT_NAME' => '/atlantic/web/index.php'
+    'PHP_SELF' => '/atlantic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1580864103.993
+    'REQUEST_TIME' => 1580864103
+]
